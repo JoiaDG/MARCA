@@ -17,42 +17,157 @@
   </head>
   <body>
 
-  <div class="container">
-        <div class="row header p-1 h-auto">
-            <div class="col-md-5 col-sm-12 mt-2 col-xs-12 d-flex">
-              <a class="cubito btn xd">
-              <img src="./src/portada.jpg" width="30px" alt="Portada" >
-              <p class="texto">Portada de hoy</p>
-            </a>
-              <a class="cubito btn xd">
-              <img src="./src/radiomarca.jpg" alt="Portada" width="40px">
-              <p class="texto">Radio MARCA</p>
-            </a>
-              <a class="cubito btn xd" >
-              <img src="./src/fantasy.png" alt="Portada" width="40px">
-              <p class="texto">Laliga Fantasy <br>MARCA</p>
-            </a>
+   <div class="nav navbar-expand-lg container" id="headBar">
+      <div class="row header">
+          <!--Aqui estan las primeras dos opciones-->
+          <div class="collapse navbar-collapse">
+          <div class="col-md-3p d-flex p-2 font-weight-bold mr-2">
+            <div class="border-right pr-3">
+              <img src="./src/portada.jpg" alt="Portada">
+              <p class="texto p-relative d-inline">Portada de Hoy</p>
             </div>
-            <div class="col-md-3 col-sm-12 col-xs-12 mt-2">
-                <a class="cubito btn" href="#">
-                <img src="./src/marcalogo.png" alt="Logotipo" width="128px">
-              </a>
-              </div>
-            <div class="col-md-4 col-sm-4 col-xs-4 pt-2 d-flex">
-              <div class="pt-3">
-                  <select class="custom-select" id="inputGroupSelect01">
+            <div class="border-right pl-1 pr-2">
+              <img class="p-relative" width="44px" src="./src/radiomarca.jpg" alt="RadioMarca">
+              <p class="texto p-relative d-inline">Radio MARCA</p>
+          </div>
+        </div>
+        </div>
+      </div>
+          <!--Aqui va el logotipo-->
+          <div class="col-md-4 col-sm-5 col-xs-5 pl-5 ml-2">
+            <img width="200px" src="./src/marcalogo.png" alt="Logotipo">
+          </div>
+          <!--Aqui van los botones-->
+          <div class="col-md-4 col-sm-7 col-xs-7 p-relative pt-3 h-100 collapse navbar-collapse">
+                  <select class="custom-select mr-2" id="inputGroupSelect01">
                       <option>US</option>
                       <option selected>ES</option>
                       <option>MX</option>
                     </select>
+                <button type="button" class="mr-2 btn bgRed text-white">Suscríbete</button>
+                <button type="button" class="mr-2 btn bg-white border">Iniciar Sesión</button>
               </div>
-              <div class="pt-3">
-                <button type="button" class="btn btn-danger">Suscríbete</button>
-                <button type="button" class="btn bg-white border">Iniciar Sesión</button>
-              </div>
-              </div>
-            </div>
+          </div>
+        </div> 
     </div>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bgRed sticky-top">
+    <img class="navbar-toggler bg-white h-100" data-toggle="collapse"  data-target="#navbarSupportedContent" data-target="#headBar" aria-controls="headBar" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle Navigation" width="100px" src="./src/marcalogo.png" alt="">
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle font-weight-bold active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Futbol
+          </a>
+          <div class="dropdown-menu bgblack" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item bgblack" href="#">LigaMX</a>
+            <a class="dropdown-item bgblack" href="#">LigaBBVA</a>
+            <a class="dropdown-item bgblack" href="#">LigaCubana</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle font-weight-bold active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Baloncesto
+            </a>
+            <div class="dropdown-menu bgblack" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item bgblack" href="#">Liga Europea</a>
+              <a class="dropdown-item bgblack" href="#">Liga Andesa</a>
+              <a class="dropdown-item bgblack" href="#">Liga Estadounidense</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle font-weight-bold active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Automóviles
+              </a>
+              <div class="dropdown-menu bgblack" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item bgblack" href="#">Formula Uno</a>
+                <a class="dropdown-item bgblack" href="#">Carritos RedBull</a>
+                <a class="dropdown-item bgblack" href="#">Rally</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle font-weight-bold active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  eSports
+                </a>
+                <div class="dropdown-menu bgblack" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item bgblack" href="#">League of Legends</a>
+                  <a class="dropdown-item bgblack" href="#">Fortnite</a>
+                  <a class="dropdown-item bgblack" href="#">Apex</a>
+                </div>
+              </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control rounded-0 border-right-0" type="search" placeholder="Buscar en marca.com" aria-label="Search">
+        <button class="btn bg-white rounded-0 h-100" type="submit">
+          <img width="20px"src="./src/teams/lupa.png" alt="Buscar">
+        </button>
+      </form>
+    </div>
+  </nav>
+
+ <nav class="navbar navbar-expand-lg bg-light">
+  <div class="collapse navbar-collapse"> 
+    <img src="./src/teams/america.png" height="40px">
+    <img src="./src/teams/chivas.png" height="50px">
+    <img src="./src/teams/queretaro.png" height="40px">
+    <img src="./src/teams/loros.png" height="40px">
+    <img src="./src/teams/cruzazul.png" height="40px">
+    <img src="./src/teams/pachuca.png" height="40px">
+    <img src="./src/teams/atlas.png" height="40px">
+    <img src="./src/teams/leon.png" height="40px">
+    <img src="./src/teams/necaxa.png" height="40px">
+    <img src="./src/teams/xolos.png" height="40px">
+  </div>
+  <img class="ml-5"src="./src/teams/marcaapuestas.png" height="40px">  
+ </nav>
+
+ <div class="container">
+   <div class="row p-1 text-center align-center">
+     <div class="col-md-2 col-sm-3 col-xs-12">
+          <h3>Agenda</h3>
+     </div>
+     <div class="col-md-1 col-sm-2 col-xs-3 p-2 bgRed">
+         <a href="#" class="font-weight-bold text-white">En Directo</a>
+     </div>
+     <div class="col-md-2 col-sm-2 col-xs-3 border">
+       <a href="#" class="">Todas las noticias</a>
+       <a href="#" class=" font-weight-bold">Última hora</a>
+     </div>
+     <div class="col-md-1 col-sm-2 col-xs-3 p-2 bgRed">
+        <a href="#" class="font-weight-bold text-white">Lo mejor del día</a>
+    </div>
+     <div class="col-md-2 col-sm-2 col-xs-3 border">
+        <a href="#" class="">Todas las noticias</a>
+        <a href="#" class=" font-weight-bold">Última hora</a>
+      </div>
+    <div class="col-md-2 col-sm-1 dropdown alignt-right border-0">
+        <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Ver más directos
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+   </div>
+   <div class="row">
+     <br>
+     <br>
+    </div>
+   <div class="row">
+     <div class="col-md-6 col-sm-6 col-xs-12">
+       <img class="img-fluid" src="./src/news/one.jpg" alt="News">
+       <a class="text-info">Futbol Mundial</a>
+       <h1>Las mejores jugadas del mundo del futbol</h1>
+     </div>
+     <div class="col-md-">
+
+     </div>
+   </div>
+ </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

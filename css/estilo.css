@@ -1,10 +1,4 @@
-.cubito{
-  display:block;
-    align-content: center;
-
- }
   .texto:hover{
-
     color:red;
   }
   .xd{
@@ -12,7 +6,10 @@
     align-content: center;
     /*background: red;*/
   }
-
-  .selek{
-    width: 
+  .bgRed{
+    background-color:#CC0000;
+  }
+  .bgblack{
+    background-color:black;
+    color:white;
   }
